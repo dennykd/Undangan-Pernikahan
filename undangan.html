@@ -26,6 +26,21 @@ session_destroy();
     <title>Panca&Sri</title>
   </head>
   <body>
+    <section class="home" id="play">
+      <div class="banner text-center">
+        <div class="text">
+          <div class="title-home">
+            <h4>Undangan Pernikahan</h4>
+          </div>
+          <h1>Panca  <span> &</span> Sri</h1>
+          <div class="content mt-3">
+            <h6>Kepada Bpk/Ibu/Saudara/i</h6>
+            <h6>Tanpa Mengurangi Rasa Hormat, Kami Mengundang Anda Untuk Dapat Menghadiri Di Acara Pernikahan Kami.</h6>
+          </div>
+          <button onclick="playmusic()" class="open btn btn-outline-light rounded-pill">Buka Undangan</button>
+        </div>
+      </div>
+    </section>
     <section class="header">
       <div class="img-header">
         <img src="img/3.jpeg" alt="">
@@ -33,7 +48,7 @@ session_destroy();
         <p>Panca  <span> &</span> Sri</p>
         <p class="quote"></p>
       </div>
-      <audio autoplay id="myAudio">
+      <audio controls hidden id="myAudio">
         <source src="music/music.mp3" type="audio/mpeg">
       </audio>
     </section>
@@ -150,6 +165,9 @@ session_destroy();
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://khaalipaper.com/js/jquery-3.2.1.min.js"></script>
+    <script>
+      
+    </script>
     <script type="text/javascript">
       //Get the button:
       mybutton = document.getElementById("myBtn");
@@ -173,20 +191,24 @@ session_destroy();
               image.src = "img/stop.png";
           }
       }
-      $(document).ready(function(){
+      var x = document.getElementById('play');
+      function playmusic(){
+        x.style.display = "none";
+        var audio = new Audio('music/music.mp3');
+        audio.play();
         $(".musicOff").click(function(){
             var image = document.getElementById('myBtn');
             var x = document.getElementById("myAudio");
-            x.play();
+            audio.play();
             if (image.src.match("img/play.png")) {
                 image.src = "img/stop.png";
             }
             else {
                 image.src = "img/play.png";
-                x.pause();
+                audio.pause();
             }
         });
-      });
+      }
     </script>
     
   </body>
