@@ -20,7 +20,6 @@
 }
 body{
   background-image: url(img/event2.jpg) !important;
-  background-repeat: repeat-y;
   background-position: center;
   background-size: cover;
 }
@@ -265,11 +264,22 @@ video{
   background-image: url(img/event.jpg);
   background-size: cover;
 }
+.greeting{
+  background-image: url(img/event2.jpg);
+  background-size: cover;
+  padding-bottom: 150px;
+}
+
+.greeting>.text-greeting>h4{
+  padding-top: 200px;
+  font-size: 100px;
+  font-family: font2;
+}
+
 
 .footer{
   height: 400px;
   background-color: black;
-  margin-top: 70px;
 }
 .footer>.text-footer>h1{
   padding-top: 100px;
@@ -406,7 +416,17 @@ video{
     font-size: 50px;
     font-family: font2;
   }
-
+  .greeting{
+    background-image: url(img/event2.jpg);
+    background-size: cover;
+    padding-bottom: 80px;
+  }
+  
+  .greeting>.text-greeting>h4{
+    padding-top: 100px;
+    font-size: 50px;
+    font-family: font2;
+  }
   .footer{
     height: 200px;
     background-color: black;
@@ -544,7 +564,17 @@ video{
     font-size: 50px;
     font-family: font2;
   }
-
+  .greeting{
+    background-image: url(img/event2.jpg);
+    background-size: cover;
+    padding-bottom: 80px;
+  }
+  
+  .greeting>.text-greeting>h4{
+    padding-top: 100px;
+    font-size: 5 0px;
+    font-family: font2;
+  }
   .footer{
     height: 200px;
     background-color: black;
@@ -735,7 +765,17 @@ video{
     font-size: 50px;
     font-family: font2;
   }
-
+  .greeting{
+    background-image: url(img/event2.jpg);
+    background-size: cover;
+    padding-bottom: 80px;
+  }
+  
+  .greeting>.text-greeting>h4{
+    padding-top: 100px;
+    font-size: 50px;
+    font-family: font2;
+  }
   .footer{
     height: 200px;
     background-color: black;
